@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+  <div class="panel-heading"><h4>Albums:</h4></div>
+  <div class="panel-body">
+    {{#each model as |a|}}
+      <div class="media">
+        <div class="media-left">
+          <a href="#">
+            <img class="media-object" src={{a.artwork_url_100}} alt="Artwork">
+          </a>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">{{a.name}}</h4>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

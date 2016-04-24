@@ -1,0 +1,8 @@
+<div class="panel panel-default">
+  <div class="panel-heading">{{model.name}}</div>
+  <div class="panel-body">
+    id: {{model.id}}
+    {{#link-to 'artist.albums' model.id}}Show albums{{/link-to}}
+  </div>
+</div>
+{{outlet}}

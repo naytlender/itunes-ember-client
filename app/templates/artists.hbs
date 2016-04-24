@@ -1,0 +1,20 @@
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Artists:</div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <tr>
+        <td>Itunes id</td>
+        <td>Name</td>
+      </tr>
+      {{#each model as |artist|}}
+        <tr>
+          <td>{{artist.id}}</td>
+          <td>{{#link-to 'artist' artist.id}}{{artist.name}}{{/link-to}}</td>
+        </tr>
+      {{/each}}
+    </table>
+  </div>
+</div>
+
+{{outlet}}
